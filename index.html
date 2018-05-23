@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Entrepreneurs d'Intérêt Général #2 - Hello Graphs !</title>
+
+		<meta name="description" content="Introduction à la théorie des graphes">
+		<meta name="author" content="Tiphaine Phe-Neau - EIG #previsecours">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<section data-background="https://media.giphy.com/media/AEzxJYSBlDbfW/giphy.gif" data-markdown>
+
+						<textarea data-template>
+						
+						<img width="500" style="background-color:white;border:0px;box-shadow:0"  data-src="img/title.png" alt="EIG logo">
+
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+
+						<textarea data-template>
+							###  Hello World ! 
+
+							Je m'appelle Tiphaine Phe-Neau :)
+
+							- Data Scientist
+							- EIG #2 au Ministère de l'Intérieur // Prévisecours
+							- PhD en Informatique
+							- @Dailymotion, @Clustree, @Saegus
+							- 🏹 / 🧗🏽‍♀️ / 🍵 / `API` / `API[::-1]`
+							- Doggos & Graphs enthusiast
+							- <a href="https://twitter.com/datatiph" target="_blank">@datatiph</a>
+
+
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							### Graphes / Des questions?
+
+							- A quoi servent les graphes ?
+							- Dans quels cas peut-on utiliser les graphes ?
+							- Dans quels projets, j’ai utilisé les graphes? REX !
+							- Qu’est ce qui compte pour réussir son projet graphe?
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### AU DEPART: UN HOMME, UNE VILLE, UNE BALADE
+
+							<img width="1050" style="background-color:white;border:0px;box-shadow:0"  data-src="img/graph-intro-1.png" alt="EIG logo">
+
+
+							
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### UN PROBLEME, UN GRAPHE
+
+							<img width="1050" style="background-color:white;border:0px;box-shadow:0"  data-src="img/graph-intro-2.png" alt="EIG logo">
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### UN POINT COMMUN
+
+							<img width="1050" style="background-color:white;border:0px;box-shadow:0"  data-src="img/graph-intro-3.png" alt="EIG logo">
+
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							#### FOCUS DDOS ET TIME VARYING GRAPHS
+
+							<img width="1050" style="background-color:white;border:0px;box-shadow:0"  data-src="https://media.giphy.com/media/GLBU8EeZzNbKE/giphy.gif">
+
+
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## SYLLABUS
+
+			
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### GRAPHES: TYPES
+
+
+							<img width="950" style="background-color:white;border:0px;box-shadow:0"  data-src="img/graphes-types-1.png" alt="EIG logo">
+
+
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### GRAPHES: TYPES
+
+
+							<img width="950" style="background-color:white;border:0px;box-shadow:0"  data-src="img/graphes-types-2.png" alt="EIG logo">
+
+
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### GRAPHES: TYPES
+
+
+							<img width="950" style="background-color:white;border:0px;box-shadow:0"  data-src="img/graph-property.png" alt="EIG logo">
+
+
+
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							## USE CASES
+
+			
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### USE CASES
+
+							- <p style="font-size: 30px">DETECTION DE FRAUDE</p>
+							<p style="font-size: 26px">Pour le blanchiment d’argent la détection de cycle dans les transferts indique que l’argent injecté retourne à l’envoyeur. Celui-ci peut avoir plusieurs identités que les graphes aident à amalgamer.</p>
+							
+							- <p style="font-size: 30px">GOUVERNANCE DES DONNEES</p>
+							<p style="font-size: 26px">Avec l’arrivée de GDPR en mai 2018, il est plus qu’important d’avoir une connaissance précise et à plusieurs niveau de votre utilisation. L’utilisation de multigraphes navigables est totalement adaptée.</p>
+							
+							- <p style="font-size: 30px">RECOMMANDATIONS / KNOWLEDGE GRAPH / SÉCURITÉ</p>
+							<p style="font-size: 26px">Par la possibilité de lier des données précédemment silotées, nous observons facilement dans une même base, les similarités utilisateurs-utilisateurs, produits-produits, les liaisons entre concepts ou les dissonances d’identité en cas de phishing.</p>
+
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							
+							- <p style="font-size: 30px">SOCIAL ANALYSIS / DIFFUSION D’OPINION</p>
+							<p style="font-size: 26px">Les réseaux sociaux ont une structure qui se capte parfaitement par des graphes avec des hubs pour les éléments populaires, des liaisons multiples pour les connaissances de chacun. Nous pouvons observer la diffusion des opinions et comment la contenir.</p>
+							
+							- <p style="font-size: 30px">CUSTOMER 360</p>
+							<p style="font-size: 26px">Dans la veine du désilotage des données, l’usage principal est de pouvoir lier et traverser des données de données initialement silotées de façon simple et efficace en temps de requêtage.</p>
+							
+							- <p style="font-size: 30px">...</p>
+							
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### Use cases graph-fit?
+
+							- ✅ KEYWORDS: OUI, OUI ! 
+
+								- <p style="font-size: 26px">Beaucoup de relations différentes entre entités / Forte connectivité / Besoin de naviguer entre des données très disparates / Internet of Things / Modèle de données complexe / Besoin d’analyse et de détection en temps réel / >= 5 joins / L’innovation interne est handicapée par les bases de données actuellement en place / Besoin de réplication, de contrôle d’accès et distribution.</p>
+							
+
+							- ❌ KEYWORDS: NO, NOPE…
+								- <p style="font-size: 26px">Les bases de données relationnelles classique fonctionnent bien / Besoins BI et analytique purs / Les données en jeu sont principalement statiques.</p>
+							
+
+
+
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### USECASE 1: CUSTOMER 360
+
+							<p style="font-size: 25px" align="left">Les bases graphes permettent d’avoir une vision complète autour des entités qui nous intéressent.</p>
+
+							<p style="font-size: 25px" align="left">Dans le cas d’une base client, connaitre les proriétés du client est primordial et facilement faisable via une base SQL. Mais qu’en est-il des relations qu’il a par rapport à son entourage?</p>
+
+							<img width="550" style="background-color:white;border:0px;box-shadow:0"  data-src="img/customer-360-0.png">
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### USECASE 1: CUSTOMER 360
+
+							<p style="font-size: 25px" align="left"> Mieux connaitre en temps réel les relations qu’a ce client avec d’autres élements permet de prioriser un traitement ou d’adapter une réponse d’un service client ou de pouvoir lui faire de meilleures recommandations produits.</p>
+
+							<img width="550" style="background-color:white;border:0px;box-shadow:0"  data-src="img/custom-360-1.png">
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### USECASE 2 : DETECTION DE FRAUDE
+							<p style="font-size: 25px" align="left">La détection de fraude nécessite une connaissance d’un très grand nombre de caractéristiques sur les entités concernées. Plus nous en avons, plus nous pouvons habilement détecter les anomalies. Cette pléthore de détails ne passe pas facilement à l’échelle pour les bases de données classiques.</p>
+
+							<p style="font-size: 25px" align="left">Dans le cas de fraude financière, la possibilité de stocker en temps réel les transactions, les devices utilisés avec leur IP nous permet l’analyse de communautés interconnecté indiquant un risque de siphonnage de liquidités.</p>
+							
+							<img width="450" style="background-color:white;border:0px;box-shadow:0"  data-src="img/fraud-0.png">
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### USECASE 2 : DETECTION DE FRAUDE
+
+							<p style="font-size: 25px" align="left">La détection en temps réel est un véritable défi pour les institutions bancaires. Ce défi correspond bien aux capacités des bases graphes. A posteriori, il est aussi facile pour le métier de remonter des réseaux frauduleux par simple requêtage de voisinage dans le graphe.</p>
+							
+							<img width="450" style="background-color:white;border:0px;box-shadow:0"  data-src="img/fraud-1.png">
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### USECASE 3 : GOUVERNANCE DES DONNEES
+
+							<p style="font-size: 25px" align="left">L’arrivée à maturité des entreprises data driven et des datalakes nous pose maintenant la question de l’inventaire des données ainsi que de leur sécurisation.</p>
+
+							<p style="font-size: 25px" align="left">Cette question se manifeste juridiquement en France par l’arrivée de mesures telles que GDPR (mai 2018) qui impose aux entreprises de pouvoir monitorer la localisation des données personnelles et de pouvoir indiquer comment elles sont utilisées.</p>
+
+
+							<img width="550" style="background-color:white;border:0px;box-shadow:0"  data-src="img/gouv-0.png">
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### USECASE 3 : GOUVERNANCE DES DONNEES
+
+							<p style="font-size: 25px" align="left">Le lineage des données personnelles est adapté pour la modélisation par graphe de propriétés. Que ce soit la localisation, les transformations des données voir même le contrôle d’accès. Le côté visualisation permet un accès rapide et efficace pour chaque référent.</p>
+
+							<img width="550" style="background-color:white;border:0px;box-shadow:0"  data-src="img/gouv-1.png">
+
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							### REX !
+
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### REX : RECO / GRAPH-BASED COLLABORATIVE FILTERING
+
+							<p style="font-size: 25px" align="left">La recommandation a été l’un des sous domaines les plus actifs de la data science avec la création du Netflix Prize qui a stimulé les avancées du domaine. Le filtrage collaboratif permet de faire des recommandations basées sur des liens entre entités.</p>
+
+							<img width="550" style="background-color:white;border:0px;box-shadow:0"  data-src="img/reco.png">
+
+							<p style="font-size: 25px" align="left">Et qui dit liens et relations, dit… Graphe !</p>
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### REX : RECO / GRAPH-BASED COLLABORATIVE FILTERING
+
+							<p style="font-size: 25px" align="left">Et qui dit liens et relations, dit… Graphe !</p>
+
+
+								One liner en Gremlin
+
+								g.V().has("customer", "customerId", "ALFKI").as("customer").
+								out("ordered").out("contains").out("is").
+								aggregate("products").in("is").in("contains").
+								in("ordered").where(neq("customer")).out("ordered").
+								out("contains").out("is").where(without("products")).
+								groupCount().order(local).by(values, decr).
+								select(keys).limit(local, 5).unfold().values("name")
+
+							<p style="font-size: 25px" align="left">Stack: Python + Neo4j + SQL</p>
+
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### REX : DES RESEAUX DE SPAMMEURS
+
+							<p style="font-size: 25px" align="left">Le but des spammeurs est de se faire passer pour des « personnes légitimes » afin de pouvoir en influencer d’autres en faisant croire que leurs contributions sont légitimes.</p>
+
+
+
+							<p style="font-size: 25px" align="left">Des patterns peuvent mettre la puce à l’oreille: un utilisateurs récent avec de nombreuses contributions. Mais c’est moins évident à détecter lorsqu’ils ne sont pas isolés. Mais… Ils ont souvent des cliques avec de nombreux arcs sortant mais peu d’entrants.</p>
+
+							<img width="400" style="background-color:white;border:0px;box-shadow:0"  data-src="img/spam.png">
+
+							
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### REX : DES RESEAUX DE SPAMMEURS
+
+							<img width="400" style="background-color:white;border:0px;box-shadow:0"  data-src="https://media.giphy.com/media/3o6gbchrcNIt4Ma8Tu/giphy.gif">
+
+
+							<p style="font-size: 25px" align="left">Dans ce cas, les graphes permettent de visualiser les groupes d’utilisateurs et les cliques facilement. Par analyse des comportements et des centralités, des groupes peuvent être détectés comme dissonant.</p>
+
+
+							<p style="font-size: 25px" align="left">Stack: Python + NetworkX + SQL</p>
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### REX: MODELISATION DES INTERACTIONS
+
+							<p style="font-size: 25px" align="left">Est ce que ça ne va pas prendre 6 mois avant d’obtenir une version exploitable? Voici une visualisation utilisant des données de production réalisée en < 10 jours et reproduisant dans un périmètre ISO des requêtes complexes faites sur le Datalake via Hadoop.</p>
+
+							<img width="800" style="background-color:white;border:0px;box-shadow:0"  data-src="img/interactions.png">
+
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### REX: MODELISATION DES INTERACTIONS
+
+							<p style="font-size: 25px" align="left">La conception et la liberté du modèle graphe laisse libre court à la pensée et à tout type de requêtage.  </p>
+
+
+							<p style="font-size: 25px" align="left">Le secret d’une base graphe efficace est sa modélisation initiale: quels éléments sont des noeuds, lesquels sont des relations? Nous créons un modèle de données pour résoudre un problème précis. </p>
+
+							<p style="font-size: 25px" align="left">La beauté du graphe vient de sa capacité à être étendu par la suite.</p>
+
+							<img width="400" style="background-color:white;border:0px;box-shadow:0"  data-src="https://media.giphy.com/media/xT4uQF7h39mlsF5czK/giphy.gif">
+
+
+							<p style="font-size: 25px" align="left">Stack: Python + Neo4j + Bash</p>
+
+
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							### TECHNOS & DOC
+
+							<img width="1050" style="background-color:white;border:0px;box-shadow:0"  data-src="img/graph-techno-oss.png" alt="EIG logo">
+
+							<a href="https://github.com/onurakpolat/awesome-bigdata#graph-data-model" target="_blank">`https://github.com/onurakpolat/awesome-bigdata#graph-data-model`</a>
+
+
+						</textarea>
+					</section>
+					
+					
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							### TAKE AWAY
+
+							<img width="700" style="background-color:white;border:0px;box-shadow:0"  data-src="https://media.giphy.com/media/FDLp6PLgC9wWs/giphy.gif" alt="Take Away meme">
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### Les questions
+
+							- A quoi servent les graphes ?
+							- Dans quels cas peut-on utiliser les graphes ?
+							- Dans quels projets, j’ai utilisé les graphes? 
+							- Qu’est ce qui compte pour réussir son projet graphe?
+
+						</textarea>
+					</section>
+					<section data-markdown>
+						<textarea data-template>
+							### TAKE AWAY
+
+							<p style="font-size: 30px" align="left">- A modéliser une vue de l’esprit multidimensionnelle et évolutive, à relier facilement des données auparavant silotées ou issues de domaines différents</p>
+	
+							<p style="font-size: 30px" align="left">- De nombreux use cases mais pas tous ;) tout dépend de la modélisation des données</p>
+
+							<p style="font-size: 30px" align="left">- Dans de la reco, de la détection de fraude, de la proximité sémantique, de la gouvernance de données et en features de modèles machine learning: sky is the limit !</p>
+
+							<p style="font-size: 30px" align="left">- Ma best practice: itérez sur vos modèles de données pour répondre à des questions précises et surtout amusez-vous !*</p>
+
+							<p style="font-size: 30px" align="right">* Attention à vos config mémoire quand même  :D</p>
+
+						</textarea>
+					</section>
+		
+					
+				</section>	
+				<section data-markdown>
+					<textarea data-template>
+						### CONTACT
+
+						<a href="mailto:tiphaine@phe-neau.com" target="_blank">`tiphaine@phe-neau.com`</a>
+
+						<a href="https://twitter.com/datatiph" target="_blank">@datatiph</a>
+
+						<img width="300" style="background-color:white;border:0px;box-shadow:0"  data-src="https://media.giphy.com/media/yoJC2GnSClbPOkV0eA/giphy.gif">
+
+
+					</textarea>
+				</section>
+					
+
+				
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
